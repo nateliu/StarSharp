@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.MessageNotifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.MessageContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,8 +42,6 @@
             this.DMToolbar = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.menuImageList = new System.Windows.Forms.ImageList(this.components);
-            this.mainMenuImageList = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -70,23 +64,6 @@
             this.mainContentSplit.SuspendLayout();
             this.DMToolbar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MessageNotifyIcon
-            // 
-            this.MessageNotifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.MessageNotifyIcon.BalloonTipText = "DataManager Message";
-            this.MessageNotifyIcon.ContextMenuStrip = this.MessageContextMenu;
-            this.MessageNotifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("MessageNotifyIcon.Icon")));
-            this.MessageNotifyIcon.Text = "DataManager Message";
-            // 
-            // MessageContextMenu
-            // 
-            this.MessageContextMenu.Name = "MessageContextMenu";
-            this.MessageContextMenu.Size = new System.Drawing.Size(61, 4);
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // splitContainer1
             // 
@@ -138,11 +115,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.BackColor = System.Drawing.Color.Pink;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Location = new System.Drawing.Point(0, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 5);
+            this.panel1.Size = new System.Drawing.Size(643, 10);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -280,18 +257,6 @@
             this.toolStripButton2.Text = "toolStripButton2";
             this.toolStripButton2.Visible = false;
             // 
-            // menuImageList
-            // 
-            this.menuImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.menuImageList.ImageSize = new System.Drawing.Size(16, 16);
-            this.menuImageList.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // mainMenuImageList
-            // 
-            this.mainMenuImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.mainMenuImageList.ImageSize = new System.Drawing.Size(16, 16);
-            this.mainMenuImageList.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,9 +296,6 @@
 
         #endregion
 
-        private System.Windows.Forms.NotifyIcon MessageNotifyIcon;
-        private System.Windows.Forms.ContextMenuStrip MessageContextMenu;
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Panel panel1;
@@ -346,8 +308,6 @@
         private System.Windows.Forms.ToolStrip DMToolbar;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ImageList menuImageList;
-        private System.Windows.Forms.ImageList mainMenuImageList;
         private System.Windows.Forms.TreeView DMNavigation;
     }
 }

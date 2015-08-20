@@ -28,8 +28,6 @@ namespace StarSharp.Win
                     _PluginContainer.Menus.Add(this.DMMenu);
                     _PluginContainer.ToolStrips.Add(this.DMToolbar);
                     _PluginContainer.Navigations.Add(this.DMNavigation);
-                    _PluginContainer.ImageList.Add(this.menuImageList);
-                    _PluginContainer.ImageList.Add(this.mainMenuImageList);
                 }
                 return _PluginContainer;
             }

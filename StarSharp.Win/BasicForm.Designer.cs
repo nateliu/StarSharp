@@ -28,14 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.userContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
-            // 
-            // userContextMenuStrip
-            // 
-            this.userContextMenuStrip.Name = "userContextMenuStrip";
-            this.userContextMenuStrip.Size = new System.Drawing.Size(153, 26);
             // 
             // BasicForm
             // 
@@ -50,6 +43,5 @@
 
         #endregion
 
-        private System.Windows.Forms.ContextMenuStrip userContextMenuStrip;
     }
 }
