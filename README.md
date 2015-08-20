@@ -9,5 +9,5 @@ In my consider, here are my propose:
 	<li>thinking....</li>
 </ul>
 
-If you intersting in this project, welcome to folk it. 
+If you intersting in this project, welcome to fork it. 
 
