@@ -1,0 +1,17 @@
+﻿<Window x:Class="StarSharp.Win.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>        
+        <Menu Name="DMMenu" Height="30px"></Menu>
+        <ToolBar Name="DMToolbar" Height="30px"></ToolBar>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TreeView Name="DMNavigation" Grid.Column="0"></TreeView>
+            <Canvas Grid.Column="1"></Canvas>
+        </Grid>
+    </StackPanel>
+</Window>
