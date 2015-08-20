@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StarSharp.Core.Plugin.ConnectionPointContainer" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAACBQCAABAAAAAAQQUAAAAAAAAAAAgACIAQBQ=</HashCode>
+      <FileName>ConnectionPointContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.MultiAppDomainPuginRunContext">
+    <Position X="0.5" Y="7.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AMAAAAAAAQAAAAAAAQEAAAEAAAAggAAACCAQAQAAAAA=</HashCode>
+      <FileName>MultiAppDomainPuginRunContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.MultiProcessPluginRunContext">
+    <Position X="3.75" Y="7.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>MultiProcessPluginRunContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.MultiThreadPluginRunContext">
+    <Position X="7.25" Y="7.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="StarSharp.Core.Plugin.MultiThreadPluginRunContext.ThreadRun">
+        <TypeIdentifier>
+          <NewMemberFileName>MultiThreadPluginRunContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAQAAAAA=</HashCode>
+      <FileName>MultiThreadPluginRunContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginClosingEventArgs">
+    <Position X="20.75" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAQAAEAAAAAAAkAAAAAEAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginClosingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginConfig">
+    <Position X="13.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEAAAAABAAAAAAAAAAAEAQgAAAAIAAQCAAAQ=</HashCode>
+      <FileName>PluginConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginConfigItem">
+    <Position X="16.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>RAAAQAIFAAAACEQCCAwAgAAJAIQAgEAECAAAQAIQCAA=</HashCode>
+      <FileName>PluginConfigItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginConfigParser">
+    <Position X="19" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAELBCABBAIAAAGIAAYAEgAAAEEiMAIEAAAAA=</HashCode>
+      <FileName>PluginConfigParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginInvokeEventArgs">
+    <Position X="22.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginInvokeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginLocalLocator">
+    <Position X="5.75" Y="19" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginLocalLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginLocatorBase">
+    <Position X="6.75" Y="13.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BAAAAJgCAAAgAAAQAAAAAAABCAgAAAAACgCBAECAABI=</HashCode>
+      <FileName>PluginLocatorBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginLocatorFactory">
+    <Position X="22.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginLocatorFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginManager">
+    <Position X="22.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgAAAgAAAABAAAAAAIAAAAAAAAAAACAAAQAAAAA=</HashCode>
+      <FileName>PluginManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginMenuBuilder">
+    <Position X="1.25" Y="12.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="StarSharp.Core.Plugin.PluginMenuBuilder.PluginMenuPartStruct">
+        <TypeIdentifier>
+          <NewMemberFileName>PluginMenuBuilder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAABAAAAAAAAAAIIABAAAAQAQAAAAAAA=</HashCode>
+      <FileName>PluginMenuBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginMenuItemBuilder">
+    <Position X="3" Y="17.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAgAAAAAABAAAAAAAACAIAAAAAAEAAAAAIAAAA=</HashCode>
+      <FileName>PluginMenuItemBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginMenuItemPartLocator">
+    <Position X="22.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAgAAAA=</HashCode>
+      <FileName>PluginMenuItemPartLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginMenuToolbarBuilder">
+    <Position X="3" Y="20.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>PluginMenuToolbarBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginMenuTreeNodeBuilder">
+    <Position X="0.5" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAABAAAAAAAAAAIAABAAAAAAAEAIAAgA=</HashCode>
+      <FileName>PluginMenuTreeNodeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginRemoteLocator">
+    <Position X="8" Y="19" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>PluginRemoteLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginRunContext">
+    <Position X="4" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>hMIhAgAAEwAABAAAAAgAAEAASCAAggAACgAQARhCAAA=</HashCode>
+      <FileName>PluginRunContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarSharp.Core.Plugin.PluginServiceProxy">
+    <Position X="20" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginServiceProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="StarSharp.Core.Plugin.PluginDll">
+    <Position X="12" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginDll.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StarSharp.Core.Plugin.PluginMenuItemPart">
+    <Position X="13.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAQAAAA=</HashCode>
+      <FileName>PluginMenuItemPart.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StarSharp.Core.Plugin.PluginMenuPath">
+    <Position X="15.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAAAAAAAAAAAAAAAAAAABAAAAEAAAAAA=</HashCode>
+      <FileName>PluginMenuPath.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StarSharp.Core.Plugin.PluginQualifiedName">
+    <Position X="17.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAA=</HashCode>
+      <FileName>PluginQualifiedName.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StarSharp.Core.Plugin.PluginTextStyle">
+    <Position X="10.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAgACAAAAAAAAAAAIAAABAAAAAACAAAAAA=</HashCode>
+      <FileName>PluginTextStyle.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="StarSharp.Core.Plugin.IConnectionPointContainer">
+    <Position X="10.25" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IConnectionPointContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarSharp.Core.Plugin.IPlugin">
+    <Position X="12.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>IPlugin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarSharp.Core.Plugin.IPluginContext">
+    <Position X="14.5" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIBAgIAAAEAAAAAIAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPluginContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarSharp.Core.Plugin.IPluginLocator">
+    <Position X="16.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAEAAAAA=</HashCode>
+      <FileName>IPluginLocator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarSharp.Core.Plugin.IPluginMenuBuilder">
+    <Position X="10.25" Y="12" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPluginMenuBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarSharp.Core.Plugin.IPluginRunContext">
+    <Position X="18.25" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAwAAAAAAAAAAAAAAAAAAgAAACAAQAQAAAAA=</HashCode>
+      <FileName>IPluginRunContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarSharp.Core.Plugin.IParametricPlugin">
+    <Position X="4.5" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>IParametricPlugin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="StarSharp.Core.Plugin.PluginConfigItemBehaviorMode">
+    <Position X="10.25" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>PluginConfigItemBehaviorMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StarSharp.Core.Plugin.PluginConfigItemStatus">
+    <Position X="13" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAgAAAAAAAAAAACAIADAAAAQAA=</HashCode>
+      <FileName>PluginConfigItemStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StarSharp.Core.Plugin.PluginLoadProtocol">
+    <Position X="15.75" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>PluginLoadProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StarSharp.Core.Plugin.PluginMenuItemLocateType">
+    <Position X="17.75" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAYAAAA=</HashCode>
+      <FileName>PluginMenuItemLocateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StarSharp.Core.Plugin.PluginMenuPathLocateType">
+    <Position X="10.25" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>PluginMenuPathLocateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="StarSharp.Core.Plugin.ExecutePluginCallback">
+    <Position X="10.25" Y="16.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IConnectionPointContainer.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
