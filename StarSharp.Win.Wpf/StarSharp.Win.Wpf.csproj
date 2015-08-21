@@ -94,9 +94,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StarSharp.Core.Plugin\StarSharp.Core.Plugin.csproj">
-      <Project>{3ea76ab1-517e-4f9f-8cb6-711b47db9ab9}</Project>
-      <Name>StarSharp.Core.Plugin</Name>
+    <ProjectReference Include="..\StarSharp.Core.Plugin.Wpf\StarSharp.Core.Plugin.Wpf.csproj">
+      <Project>{3947d9b6-b0ed-4c4f-8562-8664df7c5d55}</Project>
+      <Name>StarSharp.Core.Plugin.Wpf</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

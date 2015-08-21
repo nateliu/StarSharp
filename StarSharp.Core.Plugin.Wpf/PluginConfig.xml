@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugins>
+  <!-- url    
+		format:         PROTOCOL(addin)://CONTAINER_NAME/CATEGORY/ID
+		We can get "Container Name" and "Category" from URL.
+		Conainer Name is PluginContext.Container.Name
+		Category is decided to "Home", "System", "Monitor", "Tools"...
+	-->
+  <!-- ConnectionPoint text  format: Text;Tooltip;Image;ButtonType;ShortKey -->
+  <!-- locate format: Protocol[local,local]://ClassFullName, DllOfClass -->
+  <!-- runContext format: thread(0) the same thread, thread(1) new thread  -->
+
+  <Plugin
+		url="addin://MainForm/Home/News"
+		locate="local://StarSharp.Win.WelcomeShellPlugin,StarSharp.Win"
+		runContext="thread(0)"
+		>
+    <ConnectionPoints>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Home)" text="Home;Home;icon_folder_closed" />
+        <add locate="create(News)" text="News;Welcome;icon_grid;" />
+      </ConnectionPoint>
+      <ConnectionPoint menuType="Navigation" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Home)" text="Home;Home;icon_folder_closed" />
+        <add locate="create(News)" text="News;Welcome;icon_grid;" />
+      </ConnectionPoint>
+    </ConnectionPoints>
+  </Plugin>
+  
+  <!--Following are two plugins sample,just test no meaningfull -->
+  <Plugin
+   url="addin://MainForm/ExternalTools/Nothing"
+   locate="local://StarSharp.Plugins.HelloWorldPlugin.DoNothingPlugin,StarSharp.Plugins.HelloWorldPlugin"
+   runContext="thread(0)">
+    <ConnectionPoints>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Plugins)" text="Plugins" />
+        <add locate="create()" text="Nothing; DoNothing,just for nate test" />
+      </ConnectionPoint>
+      <ConnectionPoint menuType="Toolbar" menuIndex="0" menuImageIndex="0">
+        <add locate="create()" text="DoNothing;DoNothing,just for nate test" />
+      </ConnectionPoint>
+      <ConnectionPoint menuType="Navigation" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Plugins)" text="Plugins" />
+        <add locate="create()" text="Nothing;DoNothing,just for nate test;icon_grid;" />
+      </ConnectionPoint>
+    </ConnectionPoints>
+    <Dlls>
+      <add name="StarSharp.Plugins.HelloWorldPlugin" version="2014.09.20" />
+    </Dlls>
+  </Plugin>
+  <Plugin
+		url="addin://MainForm/ExternalTools/HelloWorld"
+		locate="local://StarSharp.Plugins.HelloWorldPlugin.HelloWorldPlugin,StarSharp.Plugins.HelloWorldPlugin"
+		runContext="thread(1)">
+    <ConnectionPoints>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Plugins)" text="Plugins" />
+        <add locate="create()" text="HelloWorldPlugin" />
+      </ConnectionPoint>
+      <ConnectionPoint menuType="Toolbar" menuIndex="0" menuImageIndex="0">
+        <add locate="create()" text="HelloWorldPlugin" />
+      </ConnectionPoint>
+      <ConnectionPoint menuType="Navigation" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Plugins)" text="Plugins" />
+        <add locate="create()" text="HelloWorldPlugin;HelloWorldPlugin;icon_grid;" />
+      </ConnectionPoint>
+    </ConnectionPoints>
+    <Dlls>
+      <add name="StarSharp.Plugins.HelloWorldPlugin" version="2014.09.20"/>
+    </Dlls>
+  </Plugin>
+  <!--End the plugin sample.-->
+
+  <Plugin
+		  url="addin://MainForm/System/WebSite"
+		  locate="local://StarSharp.Win.WebSiteShellPlugin,StarSharp.Win"
+		  runContext="thread(0)"
+		>
+    <ConnectionPoints>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Help)" text="Help" />
+        <add locate="create()" text="Web Site;Welcome to Web Site;icon_grid;" />
+      </ConnectionPoint>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Help)" text="Help" />
+        <add locate="make(About)" text="About" />
+      </ConnectionPoint>
+    </ConnectionPoints>
+  </Plugin>
+  <Plugin
+		  url="addin://MainForm/Home/WebSiteSplitter"
+		  locate="local://StarSharp.Win.Shell.SplitterPlugin,StarSharp.Win"
+		  runContext="thread(0)"
+		>
+    <ConnectionPoints>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Help)" text="Help" />
+        <add locate="create()" text="-;" />
+      </ConnectionPoint>
+    </ConnectionPoints>
+  </Plugin>
+  <Plugin
+		  url="addin://MainForm/Home/ExitApplication"
+		  locate="local://StarSharp.Win.ExitApplicationPlugin,StarSharp.Win"
+		  runContext="thread(0)"
+		>
+    <ConnectionPoints>
+      <ConnectionPoint menuType="Menu" menuIndex="0" menuImageIndex="0">
+        <add locate="make(Help)" text="Help" />
+        <add locate="create()" text="Exit;" />
+      </ConnectionPoint>
+    </ConnectionPoints>
+  </Plugin>
+
+</Plugins>

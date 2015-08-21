@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3947D9B6-B0ED-4C4F-8562-8664DF7C5D55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StarSharp.Core.Plugin</RootNamespace>
+    <AssemblyName>StarSharp.Core.Plugin.Wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionPointContainer.cs" />
+    <Compile Include="IConnectionPointContainer.cs" />
+    <Compile Include="IParametricPlugin.cs" />
+    <Compile Include="IPlugin.cs" />
+    <Compile Include="IPluginContext.cs" />
+    <Compile Include="IPluginLocator.cs" />
+    <Compile Include="IPluginMenuBuilder.cs" />
+    <Compile Include="IPluginRunContext.cs" />
+    <Compile Include="MultiAppDomainPuginRunContext.cs" />
+    <Compile Include="MultiProcessPluginRunContext.cs" />
+    <Compile Include="MultiThreadPluginRunContext.cs" />
+    <Compile Include="PluginClosingEventArgs.cs" />
+    <Compile Include="PluginConfig.cs" />
+    <Compile Include="Models\PluginConfigItem.cs" />
+    <Compile Include="Models\PluginConfigItemBehaviorMode.cs" />
+    <Compile Include="Models\PluginConfigItemStatus.cs" />
+    <Compile Include="PluginConfigParser.cs" />
+    <Compile Include="Models\PluginDll.cs" />
+    <Compile Include="PluginInvokeEventArgs.cs" />
+    <Compile Include="Models\PluginLoadProtocol.cs" />
+    <Compile Include="PluginLocalLocator.cs" />
+    <Compile Include="PluginLocatorBase.cs" />
+    <Compile Include="PluginLocatorFactory.cs" />
+    <Compile Include="PluginManager.cs" />
+    <Compile Include="PluginMenuBuilder.cs" />
+    <Compile Include="PluginMenuItemBuilder.cs" />
+    <Compile Include="Models\PluginMenuItemLocateType.cs" />
+    <Compile Include="Models\PluginMenuItemPart.cs" />
+    <Compile Include="PluginMenuItemPartLocator.cs" />
+    <Compile Include="Models\PluginMenuPath.cs" />
+    <Compile Include="Models\PluginMenuPathLocateType.cs" />
+    <Compile Include="PluginMenuToolbarBuilder.cs" />
+    <Compile Include="PluginMenuTreeNodeBuilder.cs" />
+    <Compile Include="Models\PluginQualifiedName.cs" />
+    <Compile Include="PluginRemoteLocator.cs" />
+    <Compile Include="PluginRunContext.cs" />
+    <Compile Include="PluginServiceProxy.cs" />
+    <Compile Include="Models\PluginTextStyle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PluginConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StarSharp.Core.Utility\StarSharp.Core.Utility.csproj">
+      <Project>{4a1a7667-d439-4c57-bb65-917cf3d1c54e}</Project>
+      <Name>StarSharp.Core.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
