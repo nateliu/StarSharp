@@ -149,7 +149,7 @@ namespace StarSharp.Core.Plugin
         {
             for (int i = 0; i < nodes.Count; i++)
             {
-                if ((nodes[i] as TreeViewItem).Header == menuItemIndex)
+                if ((nodes[i] as TreeViewItem).Header.ToString().Trim() == menuItemIndex)
                     return i;
             }
             return nodes.Count;

@@ -8,12 +8,12 @@ namespace StarSharp.Core.Plugin
     {
         public override void AddIntoMenu(ConnectionPointContainer container, PluginConfigItem theItem, PluginMenuPath thePath, ExecutePluginCallback callback)
         {
-            if (container.Menus != null && container.Menus.Count > 0)
+            if (null != container.Menus && container.Menus.Count > 0)
             {
-                Menu theToolbar = SelectMenu(container, thePath);
-                if (theToolbar != null)
+                Menu menu = SelectMenu(container, thePath);
+                if (null != menu)
                 {
-                    AddMenuItemIntoMenu(container, theToolbar.Items, theItem, thePath, thePath.MenuPathParts, callback);
+                    AddMenuItemIntoMenu(container, menu.Items, theItem, thePath, thePath.MenuPathParts, callback);
                 }
             }
         }
@@ -30,17 +30,17 @@ namespace StarSharp.Core.Plugin
             return null;
         }
 
-        protected void AddMenuItemIntoMenu(ConnectionPointContainer container, ItemCollection toolStripItemCollection, PluginConfigItem theItem, PluginMenuPath thePath, IList<PluginMenuItemPart> thePaths, ExecutePluginCallback callback)
+        protected void AddMenuItemIntoMenu(ConnectionPointContainer container, ItemCollection menuItemCollection, PluginConfigItem theItem, PluginMenuPath thePath, IList<PluginMenuItemPart> thePaths, ExecutePluginCallback callback)
         {
             if (thePaths.Count < 1) return;
 
             PluginMenuItemPart firstPart = thePaths[0];
-            PluginMenuPartStruct menuStruct = GetMenuItemIndex(firstPart, toolStripItemCollection);
+            PluginMenuPartStruct menuStruct = GetMenuItemIndex(firstPart, menuItemCollection);
             IList<PluginMenuItemPart> otherParts = GetLeavesMenuItemParts(thePaths);
 
             if (!menuStruct.IsCreate)
             {
-                AddMenuItemIntoMenu(container, (toolStripItemCollection[menuStruct.Index] as
+                AddMenuItemIntoMenu(container, (menuItemCollection[menuStruct.Index] as
                     MenuItem).Items,
                     theItem, thePath, otherParts, callback);
 
@@ -49,7 +49,7 @@ namespace StarSharp.Core.Plugin
             {
                 if (firstPart.TextStyle.Text.Trim() == "-")
                 {
-                    toolStripItemCollection.Insert(
+                    menuItemCollection.Insert(
                         menuStruct.Index,
                         new Separator()
                     );
@@ -58,7 +58,7 @@ namespace StarSharp.Core.Plugin
                 MenuItem theMenuItem = new MenuItem() { Header = firstPart.TextStyle.Text };
 
                 CreateMenuEndItem(firstPart, theMenuItem, GetImageList(container, thePath.MenuImageIndex));
-                toolStripItemCollection.Insert(
+                menuItemCollection.Insert(
                     menuStruct.Index,
                     theMenuItem
                 );
@@ -69,7 +69,7 @@ namespace StarSharp.Core.Plugin
                 }
                 else
                 {
-                    theMenuItem.Name = theItem.Url;
+                    //theMenuItem.Name = theItem.Url;
                     theMenuItem.Tag = new object[] { theItem, callback };
                     string[] behaviors = theItem.Behavior.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
                     foreach (string action in behaviors)
@@ -111,14 +111,14 @@ namespace StarSharp.Core.Plugin
             }
         }
 
-        private int GetMenuItemIndexById(ItemCollection toolStripItemCollection, string menuItemIndex)
+        private int GetMenuItemIndexById(ItemCollection menuItemCollection, string menuItemIndex)
         {
-            for (int i = 0; i < toolStripItemCollection.Count; i++)
+            for (int i = 0; i < menuItemCollection.Count; i++)
             {
-                if ((toolStripItemCollection[i] as MenuItem).Header == menuItemIndex)
+                if ((menuItemCollection[i] as MenuItem).Header.ToString().Trim() == menuItemIndex)
                     return i;
             }
-            return toolStripItemCollection.Count;
+            return menuItemCollection.Count;
         }
 
         protected PluginMenuPartStruct GetMenuItemIndex(PluginMenuItemPart theMenuItemPart, ItemCollection nodes)
