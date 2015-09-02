@@ -6,14 +6,20 @@ namespace StarSharp.Core.Plugin
 {
     public class PluginMenuItemBuilder : PluginMenuBuilder
     {
-        public override void AddIntoMenu(ConnectionPointContainer container, PluginConfigItem theItem, PluginMenuPath thePath, ExecutePluginCallback callback)
+        public override void AddIntoMenu(ConnectionPointContainer container, 
+                                            PluginConfigItem theItem, 
+                                            PluginMenuPath thePath, ExecutePluginCallback callback)
         {
             if (null != container.Menus && container.Menus.Count > 0)
             {
                 Menu menu = SelectMenu(container, thePath);
                 if (null != menu)
                 {
-                    AddMenuItemIntoMenu(container, menu.Items, theItem, thePath, thePath.MenuPathParts, callback);
+                    AddMenuItemIntoMenu(container, 
+                                        menu.Items, 
+                                        theItem, 
+                                        thePath, 
+                                        thePath.MenuPathParts, callback);
                 }
             }
         }
@@ -30,7 +36,11 @@ namespace StarSharp.Core.Plugin
             return null;
         }
 
-        protected void AddMenuItemIntoMenu(ConnectionPointContainer container, ItemCollection menuItemCollection, PluginConfigItem theItem, PluginMenuPath thePath, IList<PluginMenuItemPart> thePaths, ExecutePluginCallback callback)
+        protected void AddMenuItemIntoMenu(ConnectionPointContainer container,
+                                            ItemCollection menuItemCollection,
+                                            PluginConfigItem theItem,
+                                            PluginMenuPath thePath,
+                                            IList<PluginMenuItemPart> thePaths, ExecutePluginCallback callback)
         {
             if (thePaths.Count < 1) return;
 
@@ -40,28 +50,25 @@ namespace StarSharp.Core.Plugin
 
             if (!menuStruct.IsCreate)
             {
-                AddMenuItemIntoMenu(container, (menuItemCollection[menuStruct.Index] as
-                    MenuItem).Items,
-                    theItem, thePath, otherParts, callback);
+                AddMenuItemIntoMenu(container,
+                                    (menuItemCollection[menuStruct.Index] as MenuItem).Items,
+                                    theItem,
+                                    thePath,
+                                    otherParts, callback);
 
             }
             else
             {
                 if (firstPart.TextStyle.Text.Trim() == "-")
                 {
-                    menuItemCollection.Insert(
-                        menuStruct.Index,
-                        new Separator()
-                    );
+                    menuItemCollection.Insert(menuStruct.Index, new Separator());
                     return;
                 }
+
                 MenuItem theMenuItem = new MenuItem() { Header = firstPart.TextStyle.Text };
 
                 CreateMenuEndItem(firstPart, theMenuItem, GetImageList(container, thePath.MenuImageIndex));
-                menuItemCollection.Insert(
-                    menuStruct.Index,
-                    theMenuItem
-                );
+                menuItemCollection.Insert(menuStruct.Index, theMenuItem);
 
                 if (thePaths.Count > 1)
                 {
@@ -69,7 +76,7 @@ namespace StarSharp.Core.Plugin
                 }
                 else
                 {
-                    //theMenuItem.Name = theItem.Url;
+                    theMenuItem.Name = theItem.Url;
                     theMenuItem.Tag = new object[] { theItem, callback };
                     string[] behaviors = theItem.Behavior.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
                     foreach (string action in behaviors)

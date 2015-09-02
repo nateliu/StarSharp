@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarSharp.Win.Wpf", "StarSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarSharp.Core.Plugin.Wpf", "StarSharp.Core.Plugin.Wpf\StarSharp.Core.Plugin.Wpf.csproj", "{3947D9B6-B0ED-4C4F-8562-8664DF7C5D55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartSharp.WCF.Host", "StartSharp.WCF.Host\StartSharp.WCF.Host.csproj", "{CA9086C9-9AD9-4D38-9E47-F5368EAC7141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{3947D9B6-B0ED-4C4F-8562-8664DF7C5D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3947D9B6-B0ED-4C4F-8562-8664DF7C5D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3947D9B6-B0ED-4C4F-8562-8664DF7C5D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9086C9-9AD9-4D38-9E47-F5368EAC7141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9086C9-9AD9-4D38-9E47-F5368EAC7141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9086C9-9AD9-4D38-9E47-F5368EAC7141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9086C9-9AD9-4D38-9E47-F5368EAC7141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

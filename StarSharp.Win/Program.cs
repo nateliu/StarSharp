@@ -17,7 +17,8 @@ namespace StarSharp.Win
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Control.CheckForIllegalCrossThreadCalls = false;
-            Application.Run(new MainForm());
+            //Application.Run(new MainForm());
+            Application.Run(new UploadDownload());
 
             //DateTime dt = new DateTime(2013, 5, 6);
             //MessageBox.Show(Result(dt, 8).ToString());
